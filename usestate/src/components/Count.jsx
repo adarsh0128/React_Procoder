@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
-const Count = () => {
+const Count = ({ title, children }) => {
   const [count, setCount] = useState(0);
   return (
     <div>
+      {children}
+      {title}
       {count}
       <button
       // onClick={() => {
