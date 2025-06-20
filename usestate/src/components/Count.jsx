@@ -6,21 +6,22 @@ const Count = ({ title, children }) => {
     <div>
       {children}
       {title}
+      {count == 2 && "Hiii"}
       {count}
       <button
-      // onClick={() => {
-      //   setCount(count + 1);
-      //   setCount(count + 1);
-      //   //overall output is 1 not 2
-      //   // const state=[0,]
-      // }}
+        onClick={() => {
+          setCount(count + 1);
+          setCount(count + 1);
+          //overall output is 1 not 2
+          // const state=[0,]
+        }}
 
-      // onClick={() => {
-      //   setCount((prev) => prev + 1);
-      //   setCount((prev) => prev + 1);
-      //   //overall output is 2
-      //   // const state=[0,]
-      // }}
+        // onClick={() => {
+        //   setCount((prev) => prev + 1);
+        //   setCount((prev) => prev + 1);
+        //   //overall output is 2
+        //   // const state=[0,]
+        // }}
       >
         counter
       </button>
